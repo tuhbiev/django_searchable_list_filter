@@ -1,0 +1,1 @@
+default_app_config = 'django_searchable_list_filter.apps.DjangoSearchableListFilterConfig'

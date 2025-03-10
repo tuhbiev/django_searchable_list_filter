@@ -1,0 +1,12 @@
+{% load i18n %}
+<div class="search-filter">
+  <form method="get">
+    {% for key, value in request.GET.items %}
+      {% if key != spec.parameter_name %}
+        <input type="hidden" name="{{ key }}" value="{{ value }}">
+      {% endif %}
+    {% endfor %}
+    <input type="text" name="{{ spec.parameter_name }}" value="{{ spec.value|default:'' }}" placeholder="Search {{ spec.title }}">
+    <button type="submit">{% trans "Search" %}</button>
+  </form>
+</div>
