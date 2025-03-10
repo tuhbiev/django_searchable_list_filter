@@ -7,4 +7,5 @@ This is a Django application that provides a generic searchable filter for `list
 Install the package via pip:
 
 ```bash
-pip install django-searchable-list-filter
+pip install git+https://github.com/tuhbiev/django_searchable_list_filter
+
