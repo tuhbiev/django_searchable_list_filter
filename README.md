@@ -56,10 +56,3 @@ The filter template is already included in the package and is located at:
 
 Make sure your Django settings have template discovery enabled (i.e., APP_DIRS=True).
 If you need to customize the template, you can copy it into your project and modify it as required.
-
-**Summary**
-
-Installation: Use pip to install from GitHub.
-Configuration: Add 'django_searchable_list_filter' to INSTALLED_APPS.
-Customization:
-Create your own searchable filter by inheriting from SearchableListFilter and add it to your admin's list_filter.
