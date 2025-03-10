@@ -1,0 +1,1 @@
+recursive-include django_searchable_list_filter/templates *

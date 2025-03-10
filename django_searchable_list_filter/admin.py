@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.utils.translation import gettext_lazy as _
 
+
 class SearchableListFilter(admin.SimpleListFilter):
     template = 'admin/searchable_list_filter.html'
     title = None
@@ -10,6 +11,9 @@ class SearchableListFilter(admin.SimpleListFilter):
 
     def lookups(self, request, model_admin):
         return []
+
+    def has_output(self):
+        return True
 
     def choices(self, changelist):
         yield {
