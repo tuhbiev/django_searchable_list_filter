@@ -2,7 +2,7 @@
 
 This is a Django application that provides a generic searchable filter for `list_filter` in the admin.
 
-## Установка
+## Installation
 
 Install the package via pip:
 
